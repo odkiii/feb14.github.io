@@ -5,34 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ралиночка моя!</title>
     <style>
+        @font-face {
+            font-family: 'Sacramento';
+            src: url('Sacramento.ttf') format('truetype'); /* Убедитесь, что путь к файлу шрифта правильный */
+        }
+
         body {
-            background-color: #ffffff;
-            font-family: Arial, sans-serif;
+            background-image: url('фон.jpg'); /* Путь к вашему фоновому изображению */
+            background-size: cover; /* Заполнение фона */
+            background-repeat: repeat; /* Повторение фона */
+            background-position: center; /* Центрирование фона */
+            background-attachment: fixed; /* Фиксация фона при прокрутке */
+            color: darkred; /* Цвет текста для лучшей читаемости на фоне */
+            font-family: 'Sacramento', Arial, sans-serif; /* Подключение шрифта */
             text-align: center;
             margin: 0;
             padding: 20px;
+            font-size: 35px;
+            font-style: italic;
+            font-weight: 100;
         }
 
         h1 {
-            font-size: 2.5em;
+            font-size: 3em; /* Увеличение размера заголовка */
             margin-bottom: 20px;
         }
 
         .gallery {
             display: flex;
-            justify-content: center;
+            justify-content: space-between; /* Расстояние между фотографиями */
             flex-wrap: wrap;
-            gap: 20px;
+            padding: 0 20px; /* Отступы от краев страницы */
+            max-width: 60%; /* Максимальная ширина галереи */
+            margin: 0 auto; /* Центрирование галереи */
         }
 
         .photo {
-            width: 150px; /* Ширина фотографии */
-            height: 150px; /* Высота фотографии */
+            width: calc(33.33% - 20px); /* Ширина фотографии с учетом отступов */
             border-radius: 15px; /* Закругление углов */
             border: 5px solid pink; /* Розовая обводка */
             box-shadow: 0 0 10px pink; /* Светящаяся обводка */
             overflow: hidden; /* Скрыть лишнее */
             transition: transform 0.3s; /* Плавный эффект при наведении */
+            margin-bottom: 20px; /* Отступ снизу для фотографий */
         }
 
         .photo:hover {
@@ -44,50 +59,187 @@
             height: 100%; /* Высота изображения */
             object-fit: cover; /* Обтягивание изображения */
         }
-
-        /* Адаптивные стили */
-        @media (max-width: 768px) {
-            .photo {
-                width: 100px; /* Уменьшение ширины для мобильных устройств */
-                height: 100px; /* Уменьшение высоты для мобильных устройств */
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 1.8em; /* Уменьшение размера заголовка для маленьких экранов */
-            }
-
-            .photo {
-                width: 80px; /* Уменьшение ширины для очень маленьких экранов */
-                height: 80px; /* Уменьшение высоты для очень маленьких экранов */
-            }
-        }
     </style>
 </head>
 <body>
 
-<h1>Ралиночка моя! Собрал тут немного фоток наших, мы с тобой уже долго вместе</h1>
+<h1>Ралиночка моя!</h1>
+   <h2>Собрал тут немного фоток наших, мы с тобой уже долго вместе...</h2>
 
 <div class="gallery">
-    <div class="photo">
-        <img src="https://via.placeholder.com/150" alt="Фото 1">
-    </div>
-    <div class="photo">
-        <img src="https://via.placeholder.com/150" alt="Фото 2">
-    </div>
-    <div class="photo">
-        <img src="https://via.placeholder.com/150" alt="Фото 3">
-    </div>
-    <div class="photo">
-        <img src="https://via.placeholder.com/150" alt="Фото 4">
-    </div>
-    <div class="photo">
-        <img src="https://via.placeholder.com/150" alt="Фото 5">
-    </div>
-    <div class="photo">
-        <img src="https://via.placeholder.com/150" alt="Фото 6">
-    </div>
+    <!-- Первые 100 фотографий -->
+    <div class="photo"><img src="photo_1_2025-02-14_12-51-52.jpg" alt="Фото 1"></div>
+    <div class="photo"><img src="photo_2_2025-02-14_12-51-52.jpg" alt="Фото 2"></div>
+    <div class="photo"><img src="photo_3_2025-02-14_12-51-52.jpg" alt="Фото 3"></div>
+    <div class="photo"><img src="photo_4_2025-02-14_12-51-52.jpg" alt="Фото 4"></div>
+    <div class="photo"><img src="photo_5_2025-02-14_12-51-52.jpg" alt="Фото 5"></div>
+    <div class="photo"><img src="photo_6_2025-02-14_12-51-52.jpg" alt="Фото 6"></div>
+    <div class="photo"><img src="photo_7_2025-02-14_12-51-52.jpg" alt="Фото 7"></div>
+    <div class="photo"><img src="photo_8_2025-02-14_12-51-52.jpg" alt="Фото 8"></div>
+    <div class="photo"><img src="photo_9_2025-02-14_12-51-52.jpg" alt="Фото 9"></div>
+    <div class="photo"><img src="photo_10_2025-02-14_12-51-52.jpg" alt="Фото 10"></div>
+    <div class="photo"><img src="photo_11_2025-02-14_12-51-52.jpg" alt="Фото 11"></div>
+    <div class="photo"><img src="photo_12_2025-02-14_12-51-52.jpg" alt="Фото 12"></div>
+    <div class="photo"><img src="photo_13_2025-02-14_12-51-52.jpg" alt="Фото 13"></div>
+    <div class="photo"><img src="photo_14_2025-02-14_12-51-52.jpg" alt="Фото 14"></div>
+    <div class="photo"><img src="photo_15_2025-02-14_12-51-52.jpg" alt="Фото 15"></div>
+    <div class="photo"><img src="photo_16_2025-02-14_12-51-52.jpg" alt="Фото 16"></div>
+    <div class="photo"><img src="photo_17_2025-02-14_12-51-52.jpg" alt="Фото 17"></div>
+    <div class="photo"><img src="photo_18_2025-02-14_12-51-52.jpg" alt="Фото 18"></div>
+    <div class="photo"><img src="photo_19_2025-02-14_12-51-52.jpg" alt="Фото 19"></div>
+    <div class="photo"><img src="photo_20_2025-02-14_12-51-52.jpg" alt="Фото 20"></div>
+    <div class="photo"><img src="photo_21_2025-02-14_12-51-52.jpg" alt="Фото 21"></div>
+    <div class="photo"><img src="photo_22_2025-02-14_12-51-52.jpg" alt="Фото 22"></div>
+    <div class="photo"><img src="photo_23_2025-02-14_12-51-52.jpg" alt="Фото 23"></div>
+    <div class="photo"><img src="photo_24_2025-02-14_12-51-52.jpg" alt="Фото 24"></div>
+    <div class="photo"><img src="photo_25_2025-02-14_12-51-52.jpg" alt="Фото 25"></div>
+    <div class="photo"><img src="photo_26_2025-02-14_12-51-52.jpg" alt="Фото 26"></div>
+    <div class="photo"><img src="photo_27_2025-02-14_12-51-52.jpg" alt="Фото 27"></div>
+    <div class="photo"><img src="photo_28_2025-02-14_12-51-52.jpg" alt="Фото 28"></div>
+    <div class="photo"><img src="photo_29_2025-02-14_12-51-52.jpg" alt="Фото 29"></div>
+    <div class="photo"><img src="photo_30_2025-02-14_12-51-52.jpg" alt="Фото 30"></div>
+    <div class="photo"><img src="photo_31_2025-02-14_12-51-52.jpg" alt="Фото 31"></div>
+    <div class="photo"><img src="photo_32_2025-02-14_12-51-52.jpg" alt="Фото 32"></div>
+    <div class="photo"><img src="photo_33_2025-02-14_12-51-52.jpg" alt="Фото 33"></div>
+    <div class="photo"><img src="photo_34_2025-02-14_12-51-52.jpg" alt="Фото 34"></div>
+    <div class="photo"><img src="photo_35_2025-02-14_12-51-52.jpg" alt="Фото 35"></div>
+    <div class="photo"><img src="photo_36_2025-02-14_12-51-52.jpg" alt="Фото 36"></div>
+    <div class="photo"><img src="photo_37_2025-02-14_12-51-52.jpg" alt="Фото 37"></div>
+    <div class="photo"><img src="photo_38_2025-02-14_12-51-52.jpg" alt="Фото 38"></div>
+    <div class="photo"><img src="photo_39_2025-02-14_12-51-52.jpg" alt="Фото 39"></div>
+    <div class="photo"><img src="photo_40_2025-02-14_12-51-52.jpg" alt ="Фото 40"></div>
+    <div class="photo"><img src="photo_41_2025-02-14_12-51-52.jpg" alt="Фото 41"></div>
+    <div class="photo"><img src="photo_42_2025-02-14_12-51-52.jpg" alt="Фото 42"></div>
+    <div class="photo"><img src="photo_43_2025-02-14_12-51-52.jpg" alt="Фото 43"></div>
+    <div class="photo"><img src="photo_44_2025-02-14_12-51-52.jpg" alt="Фото 44"></div>
+    <div class="photo"><img src="photo_45_2025-02-14_12-51-52.jpg" alt="Фото 45"></div>
+    <div class="photo"><img src="photo_46_2025-02-14_12-51-52.jpg" alt="Фото 46"></div>
+    <div class="photo"><img src="photo_47_2025-02-14_12-51-52.jpg" alt="Фото 47"></div>
+    <div class="photo"><img src="photo_48_2025-02-14_12-51-52.jpg" alt="Фото 48"></div>
+    <div class="photo"><img src="photo_49_2025-02-14_12-51-52.jpg" alt="Фото 49"></div>
+    <div class="photo"><img src="photo_50_2025-02-14_12-51-52.jpg" alt="Фото 50"></div>
+    <div class="photo"><img src="photo_51_2025-02-14_12-51-52.jpg" alt="Фото 51"></div>
+    <div class="photo"><img src="photo_52_2025-02-14_12-51-52.jpg" alt="Фото 52"></div>
+    <div class="photo"><img src="photo_53_2025-02-14_12-51-52.jpg" alt="Фото 53"></div>
+    <div class="photo"><img src="photo_54_2025-02-14_12-51-52.jpg" alt="Фото 54"></div>
+    <div class="photo"><img src="photo_55_2025-02-14_12-51-52.jpg" alt="Фото 55"></div>
+    <div class="photo"><img src="photo_56_2025-02-14_12-51-52.jpg" alt="Фото 56"></div>
+    <div class="photo"><img src="photo_57_2025-02-14_12-51-52.jpg" alt="Фото 57"></div>
+    <div class="photo"><img src="photo_58_2025-02-14_12-51-52.jpg" alt="Фото 58"></div>
+    <div class="photo"><img src="photo_59_2025-02-14_12-51-52.jpg" alt="Фото 59"></div>
+    <div class="photo"><img src="photo_60_2025-02-14_12-51-52.jpg" alt="Фото 60"></div>
+    <div class="photo"><img src="photo_61_2025-02-14_12-51-52.jpg" alt="Фото 61"></div>
+    <div class="photo"><img src="photo_62_2025-02-14_12-51-52.jpg" alt="Фото 62"></div>
+    <div class="photo"><img src="photo_63_2025-02-14_12-51-52.jpg" alt="Фото 63"></div>
+    <div class="photo"><img src="photo_64_2025-02-14_12-51-52.jpg" alt="Фото 64"></div>
+    <div class="photo"><img src="photo_65_2025-02-14_12-51-52.jpg" alt="Фото 65"></div>
+    <div class="photo"><img src="photo_66_2025-02-14_12-51-52.jpg" alt="Фото 66"></div>
+    <div class="photo"><img src="photo_67_2025-02-14_12-51-52.jpg" alt="Фото 67"></div>
+    <div class="photo"><img src="photo_68_2025-02-14_12-51-52.jpg" alt="Фото 68"></div>
+    <div class="photo"><img src="photo_69_2025-02-14_12-51-52.jpg" alt="Фото 69"></div>
+    <div class="photo"><img src="photo_70_2025-02-14_12-51-52.jpg" alt="Фото 70"></div>
+    <div class="photo"><img src="photo_71_2025-02-14_12-51-52.jpg" alt="Фото 71"></div>
+    <div class="photo"><img src="photo_72_2025-02-14_12-51-52.jpg" alt="Фото 72"></div>
+    <div class="photo"><img src="photo_73_2025-02-14_12-51-52.jpg" alt="Фото 73"></div>
+    <div class="photo"><img src="photo_74_2025-02-14_12-51-52.jpg" alt="Фото 74"></div>
+    <div class="photo"><img src="photo_75_2025-02-14_12-51-52.jpg" alt="Фото 75"></div>
+    <div class="photo"><img src="photo_76_2025-02-14_12-51-52.jpg" alt="Фото 76"></div>
+    <div class="photo"><img src="photo_77_2025-02-14_12-51-52.jpg" alt="Фото 77"></div>
+    <div class="photo"><img src="photo_78_2025-02-14_12-51-52.jpg" alt="Фото 78"></div>
+    <div class="photo"><img src="photo_79_2025-02-14_12-51-52.jpg" alt="Фото 79"></div>
+    <div class="photo"><img src="photo_80_2025-02-14_12-51-52.jpg" alt="Фото 80"></div>
+    <div class="photo"><img src="photo_81_2025-02-14_12-51-52.jpg" alt="Фото 81"></div>
+    <div class="photo"><img src="photo_82_2025-02-14_12-51-52.jpg" alt="Фото 82"></div>
+    <div class="photo"><img src="photo_83_2025-02-14_12-51-52.jpg" alt="Фото 83"></div>
+    <div class="photo"><img src="photo_84_2025-02-14_12-51-52.jpg" alt="Фото 84"></div>
+    <div class="photo"><img src="photo_85_2025-02-14_12-51-52.jpg" alt="Фото 85"></div>
+    <div class="photo"><img src="photo_86_2025-02-14_12-51-52.jpg" alt="Фото 86"></div>
+    <div class="photo"><img src="photo_87_2025-02-14_12-51-52.jpg" alt="Фото 87"></div>
+    <div class="photo"><img src="photo_88_2025-02-14_12-51-52.jpg" alt="Фото 88"></div>
+    <div class="photo"><img src="photo_89_2025-02-14_12-51-52.jpg" alt="Фото 89"></div>
+    <div class="photo"><img src="photo_90_2025-02-14_12-51-52.jpg" alt="Фото 90"></div>
+    <div class="photo"><img src="photo_91_2025-02-14_12-51-52.jpg" alt="Фото 91"></div>
+    <div class="photo"><img src="photo_92_2025-02-14_12-51-52.jpg" alt="Фото 92"></div>
+    <div class="photo"><img src="photo_93_2025-02-14_12-51-52.jpg" alt="Фото 93"></div>
+    <div class="photo"><img src="photo_94_2025-02-14_12-51-52.jpg" alt="Фото 94"></div>
+    <div class="photo"><img src="photo_95_2025-02-14_12-51-52.jpg" alt="Фото 95"></div>
+    <div class="photo"><img src="photo_96_2025-02-14_12-51-52.jpg" alt="Фото 96"></div>
+    <div class="photo"><img src="photo_97_2025-02-14_12-51- 52.jpg" alt="Фото 97"></div>
+    <div class="photo"><img src="photo_98_2025-02-14_12-51-52.jpg" alt="Фото 98"></div>
+    <div class="photo"><img src="photo_99_2025-02-14_12-51-52.jpg" alt="Фото 99"></div>
+    <div class="photo"><img src="photo_100_2025-02-14_12-51-52.jpg" alt="Фото 100"></div>
+    <!-- Следующие 72 фотографии -->
+    <div class="photo"><img src="photo_2_2025-02-14_13-25-47.jpg" alt="Фото 2"></div>
+    <div class="photo"><img src="photo_3_2025-02-14_13-25-47.jpg" alt="Фото 3"></div>
+    <div class="photo"><img src="photo_4_2025-02-14_13-25-47.jpg" alt="Фото 4"></div>
+    <div class="photo"><img src="photo_5_2025-02-14_13-25-47.jpg" alt="Фото 5"></div>
+    <div class="photo"><img src="photo_6_2025-02-14_13-25-47.jpg" alt="Фото 6"></div>
+    <div class="photo"><img src="photo_7_2025-02-14_13-25-47.jpg" alt="Фото 7"></div>
+    <div class="photo"><img src="photo_8_2025-02-14_13-25-47.jpg" alt="Фото 8"></div>
+    <div class="photo"><img src="photo_9_2025-02-14_13-25-47.jpg" alt="Фото 9"></div>
+    <div class="photo"><img src="photo_10_2025-02-14_13-25-47.jpg" alt="Фото 10"></div>
+    <div class="photo"><img src="photo_11_2025-02-14_13-25-47.jpg" alt="Фото 11"></div>
+    <div class="photo"><img src="photo_12_2025-02-14_13-25-47.jpg" alt="Фото 12"></div>
+    <div class="photo"><img src="photo_13_2025-02-14_13-25-47.jpg" alt="Фото 13"></div>
+    <div class="photo"><img src="photo_14_2025-02-14_13-25-47.jpg" alt="Фото 14"></div>
+    <div class="photo"><img src="photo_15_2025-02-14_13-25-47.jpg" alt="Фото 15"></div>
+    <div class="photo"><img src="photo_16_2025-02-14_13-25-47.jpg" alt="Фото 16"></div>
+    <div class="photo"><img src="photo_17_2025-02-14_13-25-47.jpg" alt="Фото 17"></div>
+    <div class="photo"><img src="photo_18_2025-02-14_13-25-47.jpg" alt="Фото 18"></div>
+    <div class="photo"><img src="photo_19_2025-02-14_13-25-47.jpg" alt="Фото 19"></div>
+    <div class="photo"><img src="photo_20_2025-02-14_13-25-47.jpg" alt="Фото 20"></div>
+    <div class="photo"><img src="photo_21_2025-02-14_13-25-47.jpg" alt="Фото 21"></div>
+    <div class="photo"><img src="photo_22_2025-02-14_13-25-47.jpg" alt="Фото 22"></div>
+    <div class="photo"><img src="photo_23_2025-02-14_13-25-47.jpg" alt="Фото 23"></div>
+    <div class="photo"><img src="photo_24_2025-02-14_13-25-47.jpg" alt="Фото 24"></div>
+    <div class="photo"><img src="photo_25_2025-02-14_13-25-47.jpg" alt="Фото 25 "></div>
+    <div class="photo"><img src="photo_26_2025-02-14_13-25-47.jpg" alt="Фото 26"></div>
+    <div class="photo"><img src="photo_27_2025-02-14_13-25-47.jpg" alt="Фото 27"></div>
+    <div class="photo"><img src="photo_28_2025-02-14_13-25-47.jpg" alt="Фото 28"></div>
+    <div class="photo"><img src="photo_29_2025-02-14_13-25-47.jpg" alt="Фото 29"></div>
+    <div class="photo"><img src="photo_30_2025-02-14_13-25-47.jpg" alt="Фото 30"></div>
+    <div class="photo"><img src="photo_31_2025-02-14_13-25-47.jpg" alt="Фото 31"></div>
+    <div class="photo"><img src="photo_32_2025-02-14_13-25-47.jpg" alt="Фото 32"></div>
+    <div class="photo"><img src="photo_33_2025-02-14_13-25-47.jpg" alt="Фото 33"></div>
+    <div class="photo"><img src="photo_34_2025-02-14_13-25-47.jpg" alt="Фото 34"></div>
+    <div class="photo"><img src="photo_35_2025-02-14_13-25-47.jpg" alt="Фото 35"></div>
+    <div class="photo"><img src="photo_36_2025-02-14_13-25-47.jpg" alt="Фото 36"></div>
+    <div class="photo"><img src="photo_37_2025-02-14_13-25-47.jpg" alt="Фото 37"></div>
+    <div class="photo"><img src="photo_38_2025-02-14_13-25-47.jpg" alt="Фото 38"></div>
+    <div class="photo"><img src="photo_39_2025-02-14_13-25-47.jpg" alt="Фото 39"></div>
+    <div class="photo"><img src="photo_40_2025-02-14_13-25-47.jpg" alt="Фото 40"></div>
+    <div class="photo"><img src="photo_41_2025-02-14_13-25-47.jpg" alt="Фото 41"></div>
+    <div class="photo"><img src="photo_42_2025-02-14_13-25-47.jpg" alt="Фото 42"></div>
+    <div class="photo"><img src="photo_43_2025-02-14_13-25-47.jpg" alt="Фото 43"></div>
+    <div class="photo"><img src="photo_44_2025-02-14_13-25-47.jpg" alt="Фото 44"></div>
+    <div class="photo"><img src="photo_45_2025-02-14_13-25-47.jpg" alt="Фото 45"></div>
+    <div class="photo"><img src="photo_46_2025-02-14_13-25-47.jpg" alt="Фото 46"></div>
+    <div class="photo"><img src="photo_47_2025-02-14_13-25-47.jpg" alt="Фото 47"></div>
+    <div class="photo"><img src="photo_48_2025-02-14_13-25-47.jpg" alt="Фото 48"></div>
+    <div class="photo"><img src="photo_49_2025-02-14_13-25-47.jpg" alt="Фото 49"></div>
+    <div class="photo"><img src="photo_50_2025-02-14_13-25-47.jpg" alt="Фото 50"></div>
+    <div class="photo"><img src="photo_51_2025-02-14_13-25-47.jpg" alt="Фото 51"></div>
+    <div class="photo"><img src="photo_52_2025-02-14_13-25-47.jpg" alt="Фото 52"></div>
+    <div class="photo"><img src="photo_53_2025-02-14_13-25-47.jpg" alt="Фото 53"></div>
+    <div class="photo"><img src="photo_54_2025-02-14_13-25-47.jpg" alt="Фото 54"></div>
+    <div class="photo"><img src="photo_55_2025-02-14_13-25-47.jpg" alt="Фото 55"></div>
+    <div class="photo"><img src="photo_56_2025-02-14_13-25-47.jpg" alt="Фото 56"></div>
+    <div class="photo"><img src="photo_57_2025-02-14_13-25-47.jpg" alt="Фото 57"></div>
+    <div class="photo"><img src="photo_58_2025-02-14_13-25-47.jpg" alt="Фото 58"></div>
+    <div class="photo"><img src="photo_59_2025-02-14_13-25-47.jpg" alt="Фото 59"></div>
+    <div class="photo"><img src="photo_60_2025-02-14_13-25-47.jpg" alt="Фото 60"></div>
+    <div class="photo"><img src="photo_61_2025-02-14_13-25-47.jpg" alt="Фото 61"></div>
+    <div class="photo"><img src="photo_62_2025-02-14_13-25-47.jpg" alt="Фото 62"></div>
+    <div class="photo"><img src="photo_63_2025-02-14_13-25-47.jpg" alt="Фото 63"></div>
+    <div class="photo"><img src="photo_64_2025-02-14_13-25-47.jpg" alt="Фото 64"></div>
+    <div class="photo"><img src="photo_65_2025-02-14_13-25-47.jpg" alt="Фото 65"></div>
+    <div class="photo"><img src="photo_66_2025-02-14_13-25-47.jpg" alt="Фото 66"></div>
+    <div class="photo"><img src="photo_67_2025-02-14_13-25-47.jpg" alt="Фото 67"></div>
+    <div class="photo"><img src="photo_68_2025-02-14_13-25-47.jpg" alt="Фото 68"></div>
+    <div class="photo"><img src="photo_69_2025-02-14_13-25-47.jpg" alt="Фото 69"></div>
+    <div class="photo"><img src="photo_70_2025-02-14_13-25-47.jpg" alt="Фото 70"></div>
+    <div class="photo"><img src="photo_71_2025-02-14_13-25-47.jpg" alt="Фото 71"></div>
+    <div class="photo"><img src="photo_72_2025-02-14_13-25-47.jpg" alt="Фото 72"></div>
 </div>
 
 </body>
