@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ралиночка моя!</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .photo {
+            width: 150px; /* Ширина фотографии */
+            height: 150px; /* Высота фотографии */
+            border-radius: 15px; /* Закругление углов */
+            border: 5px solid pink; /* Розовая обводка */
+            box-shadow: 0 0 10px pink; /* Светящаяся обводка */
+            overflow: hidden; /* Скрыть лишнее */
+            transition: transform 0.3s; /* Плавный эффект при наведении */
+        }
+
+        .photo:hover {
+            transform: scale(1.05); /* Увеличение при наведении */
+        }
+
+        img {
+            width: 100%; /* Ширина изображения */
+            height: 100%; /* Высота изображения */
+            object-fit: cover; /* Обтягивание изображения */
+        }
+
+        /* Адаптивные стили */
+        @media (max-width: 768px) {
+            .photo {
+                width: 100px; /* Уменьшение ширины для мобильных устройств */
+                height: 100px; /* Уменьшение высоты для мобильных устройств */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em; /* Уменьшение размера заголовка для маленьких экранов */
+            }
+
+            .photo {
+                width: 80px; /* Уменьшение ширины для очень маленьких экранов */
+                height: 80px; /* Уменьшение высоты для очень маленьких экранов */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Ралиночка моя! Собрал тут немного фоток наших, мы с тобой уже долго вместе</h1>
+
+<div class="gallery">
+    <div class="photo">
+        <img src="https://via.placeholder.com/150" alt="Фото 1">
+    </div>
+    <div class="photo">
+        <img src="https://via.placeholder.com/150" alt="Фото 2">
+    </div>
+    <div class="photo">
+        <img src="https://via.placeholder.com/150" alt="Фото 3">
+    </div>
+    <div class="photo">
+        <img src="https://via.placeholder.com/150" alt="Фото 4">
+    </div>
+    <div class="photo">
+        <img src="https://via.placeholder.com/150" alt="Фото 5">
+    </div>
+    <div class="photo">
+        <img src="https://via.placeholder.com/150" alt="Фото 6">
+    </div>
+</div>
+
+</body>
+</html>
