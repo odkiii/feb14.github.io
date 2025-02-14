@@ -1,1 +1,1 @@
-Copyright (c) 2016 by Joel Maker . All rights reserved.
+Copyright © 2017 by Ira Dvilyuk. All rights reserved.
